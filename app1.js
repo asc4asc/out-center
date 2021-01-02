@@ -14,16 +14,21 @@ tmp.style.backgroundColor = "blue";
 		        ms = jetzt.getMilliseconds();
 		m = fuehrendeNull(m);
 		s = fuehrendeNull(s);
-		ms = fuehrendeNull(ms);
+		ms = fuehrendeNullen(ms);
 		tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
 		setTimeout(uhrzeit, 50);
 	}
 
 	function fuehrendeNull(zahl) {
 		zahl = (zahl < 10 ? '0' : '') + zahl;
+		return zahl;
+	}
+	function fuehrendeNullen(zahl) {
+		zahl = (zahl < 10 ? '0' : '') + zahl;
 		zahl = (zahl < 100 ? '0' : '') + zahl;
 		return zahl;
 	}
+
 	document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
 
