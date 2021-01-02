@@ -21,6 +21,7 @@ tmp.style.backgroundColor = "blue";
 
 	function fuehrendeNull(zahl) {
 		zahl = (zahl < 10 ? '0' : '') + zahl;
+		zahl = (zahl < 100 ? '0' : '') + zahl;
 		return zahl;
 	}
 	document.addEventListener('DOMContentLoaded', uhrzeit);
