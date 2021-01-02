@@ -11,9 +11,11 @@ tmp.style.backgroundColor = "blue";
 			h = jetzt.getHours(),
 			m = jetzt.getMinutes(),
 			s = jetzt.getSeconds();
+		        ms = jetzt.getMilliseconds();
 		m = fuehrendeNull(m);
 		s = fuehrendeNull(s);
-		tmp1.innerHTML = h + ':' + m + ':' + s;
+		ms = fuehrendeNull(ms);
+		tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
 		setTimeout(uhrzeit, 500);
 	}
 
