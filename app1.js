@@ -16,7 +16,7 @@ tmp.style.backgroundColor = "blue";
 		s = fuehrendeNull(s);
 		ms = fuehrendeNull(ms);
 		tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
-		setTimeout(uhrzeit, 500);
+		setTimeout(uhrzeit, 50);
 	}
 
 	function fuehrendeNull(zahl) {
