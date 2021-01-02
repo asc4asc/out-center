@@ -1,0 +1,47 @@
+
+body {
+  /* Computer Font not like a book for the APP */
+  font-family: sans-serif; 
+}
+
+/* Make content area fill the entire browser window */
+html,
+.fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Center the content in the browser window */
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+/* The text in the apps Website */
+.title {
+  font-size: 3rem;
+  color: red;
+}
+
+button1,button2,button3 {
+  font-size: 2rem;
+  color: green;
+  padding: 15px;
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 12px;
+  border: 2px solid black;
+}
+
+clock {
+  font-size: 20vw;
+  color: black;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+}
