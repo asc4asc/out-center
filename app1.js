@@ -2,11 +2,14 @@
 
 let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
+let out=1;
 
 tmp.style.backgroundColor = "blue";
 
 (function () {
-	function uhrzeit() {
+  	function uhrzeit() {
+          if (out) {
+
 		var jetzt = new Date(),
 			h = jetzt.getHours(),
 			m = jetzt.getMinutes(),
@@ -17,6 +20,7 @@ tmp.style.backgroundColor = "blue";
 		ms = fuehrendeNullen(ms);
 		tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
 		setTimeout(uhrzeit, 10);
+	  }
 	}
 
 	function fuehrendeNull(zahl) {
