@@ -7,10 +7,9 @@ tmp.style.backgroundColor = "blue";
 
 (function () {
   	function uhrzeit() {
-          if (i) {
-
+          if (i == 1) {
 		var jetzt = new Date(),
-			h = jetzt.getHours(),
+			h = jetzt.getHours(), 
 			m = jetzt.getMinutes(),
 			s = jetzt.getSeconds(),
 		        ms = jetzt.getMilliseconds();
