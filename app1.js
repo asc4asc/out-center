@@ -2,13 +2,12 @@
 
 let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
-let out=1;
 
 tmp.style.backgroundColor = "blue";
 
 (function () {
   	function uhrzeit() {
-          if (out) {
+          if (i) {
 
 		var jetzt = new Date(),
 			h = jetzt.getHours(),
