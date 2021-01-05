@@ -45,9 +45,9 @@ document.body.addEventListener("click", event => {
     window.navigator.vibrate(1000);
   } else {
     tmp.style.backgroundColor = "yellow";
-    i=1;
-    dat1 = new Date(); 
-    dat1 = dat1 - dat;	  
+    i=1; 
+    dat1 = new Date();
+    dat1 = dat1.getTime() - dat.getTime(); 
     openFullscreen();
   }
 });
