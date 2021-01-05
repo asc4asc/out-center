@@ -5,6 +5,8 @@ let tmp1=document.querySelector("clock");
 let dat=new Date();
 let dat1=new Date();
 let dat2;
+let datms1;
+let datms2;
 
 tmp.style.backgroundColor = "blue";
 
@@ -48,7 +50,9 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat2 = new Date();
-    dat.setTime(dat2.getTime() - dat1.getTime()); 
+    datms1=dat1.getTime(); 
+    datms2=dat2.getTime(); 	  
+    dat.setTime( datms1 - dat1ms2 );  
     openFullscreen();
   }
 });
