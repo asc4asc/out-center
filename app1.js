@@ -2,7 +2,7 @@
 
 let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
-let dat=new Date()
+let dat=new Date();
 
 tmp.style.backgroundColor = "blue";
 
@@ -10,7 +10,7 @@ tmp.style.backgroundColor = "blue";
 (function () {
   	function uhrzeit() {
           if (i == 1) {
-		dat =  new Date() - dat; 
+		
 		var jetzt = dat, // new Date(),
 			h = jetzt.getHours(), 
 			m = jetzt.getMinutes(),
@@ -42,7 +42,7 @@ document.body.addEventListener("click", event => {
   if (i == 1) {
     tmp.style.backgroundColor = "green"; i=0; window.navigator.vibrate(100);
   } else {
-    tmp.style.backgroundColor = "yellow"; i=1; 
+    tmp.style.backgroundColor = "yellow"; i=1; dat =  new Date() - dat;  
     openFullscreen();
   }
 });
