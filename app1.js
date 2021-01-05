@@ -3,6 +3,7 @@
 let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
 let dat=new Date();
+let dat1=new Date();
 
 tmp.style.backgroundColor = "blue";
 
@@ -10,7 +11,6 @@ tmp.style.backgroundColor = "blue";
 (function () {
   	function uhrzeit() {
           if (i == 1) {	
-		// var dat1 = new Date() - dat;
 		var jetzt = dat; // new Date();
 		var h = jetzt.getHours(); 
 		var m = jetzt.getMinutes();
@@ -46,6 +46,7 @@ document.body.addEventListener("click", event => {
   } else {
     tmp.style.backgroundColor = "yellow";
     i=1;
+    dat1 = new Date() - dat;	  
     openFullscreen();
   }
 });
