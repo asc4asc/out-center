@@ -47,7 +47,7 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat1 = new Date();
-    dat1 = dat1.getTime() - dat.getTime(); 
+    dat1.setTime(dat1.getTime() - dat.getTime()); 
     openFullscreen();
   }
 });
