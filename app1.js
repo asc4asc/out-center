@@ -52,7 +52,7 @@ document.body.addEventListener("click", event => {
     dat2 = new Date();
     datms1=dat1.getTime(); 
     datms2=dat2.getTime(); 	  
-    dat.setTime( datms1 - dat1ms2 );  
+    dat.setTime( datms1 - datms2 );  
     openFullscreen();
   }
 });
