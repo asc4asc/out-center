@@ -11,7 +11,7 @@ tmp.style.backgroundColor = "blue";
   	function uhrzeit() {
           if (i == 1) {
 		
-		var jetzt = dat, // new Date(),
+		var jetzt = new Date(),
 			h = jetzt.getHours(), 
 			m = jetzt.getMinutes(),
 			s = jetzt.getSeconds(),
@@ -40,9 +40,9 @@ tmp.style.backgroundColor = "blue";
 let i=1;
 document.body.addEventListener("click", event => {
   if (i == 1) {
-    tmp.style.backgroundColor = "green"; i=0; window.navigator.vibrate(100);
+    tmp.style.backgroundColor = "green"; i=0; window.navigator.vibrate(1000);
   } else {
-    tmp.style.backgroundColor = "yellow"; i=1; dat =  new Date() - dat;  
+    tmp.style.backgroundColor = "yellow"; i=1;
     openFullscreen();
   }
 });
