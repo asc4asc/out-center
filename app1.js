@@ -50,7 +50,7 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat2 = new Date();
-    datms1=dat1.getTime(); 
+    datms1=dat1.getTime()-1000*360; 
     datms2=dat2.getTime(); 	  
     dat.setTime( datms1 - datms2 );  
     openFullscreen();
