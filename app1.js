@@ -13,7 +13,7 @@ tmp.style.backgroundColor = "blue";
 
 (function () {
   	function uhrzeit() {
-          if (i == 1) {	
+          if (i == 1) {	// display
 		dat = new Date();  // if dat=0 do not set it!
 		datms2 = dat.getTime();  
 		dat.setTime( datms1 - datms2 );   
@@ -27,7 +27,7 @@ tmp.style.backgroundColor = "blue";
 		ms = fuehrendeNullen(ms);
 		tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
 	  }
-	  if (dat1 - dat2 < 0) { i=0; } // check it time is gone? Set timer to display to zero. 
+	  // if (dat2 - dat1-1000*60*59 < 0) { i=0; } // check it time is gone? Set timer to display to zero. 
 	  setTimeout(uhrzeit, 1);
 		
 	}
