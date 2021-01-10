@@ -4,7 +4,7 @@ let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
 let dat=new Date();
 let dat1=new Date();
-let dat2;
+let dat2=new Date();
 let datms1=dat.getTime();
 let datms2=dat.getTime();
 
@@ -14,7 +14,7 @@ tmp.style.backgroundColor = "blue";
 (function () {
   	function uhrzeit() {
           if (i == 1) {	
-		dat = new Date();  
+		dat = new Date();  // if dat=0 do not set it!
 		datms2 = dat.getTime();  
 		dat.setTime( datms1 - datms2 );   
 		var jetzt = dat; // new Date(); //
@@ -27,7 +27,7 @@ tmp.style.backgroundColor = "blue";
 		ms = fuehrendeNullen(ms);
 		tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
 	  }
-	  // check it time is gone? Set timer to display to zero. 
+	  if (dat1 - dat2 < 0) { i=0; } // check it time is gone? Set timer to display to zero. 
 	  setTimeout(uhrzeit, 1);
 		
 	}
