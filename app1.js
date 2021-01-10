@@ -5,8 +5,8 @@ let tmp1=document.querySelector("clock");
 let dat=new Date();
 let dat1=new Date();
 let dat2;
-let datms1;
-let datms2;
+let datms1=dat.getTime();
+let datms2=dat.getTime();
 
 tmp.style.backgroundColor = "blue";
 
@@ -15,7 +15,7 @@ tmp.style.backgroundColor = "blue";
   	function uhrzeit() {
           if (i == 1) {	
 		dat = new Date();  
-		datms2=dat.getTime();  
+		datms2 = dat.getTime();  
 		dat.setTime( datms1 - datms2 );   
 		var jetzt = dat; // new Date(); //
 		var h = jetzt.getHours(); 
