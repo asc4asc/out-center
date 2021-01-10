@@ -24,7 +24,9 @@ tmp.style.backgroundColor = "blue";
 		ms = fuehrendeNullen(ms);
 		tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
 	  }
-	  setTimeout(uhrzeit, 1);	
+	  // check it time is gone? Set timer to display to zero. 
+	  setTimeout(uhrzeit, 1);
+		
 	}
 
 	function fuehrendeNull(zahl) {
@@ -50,7 +52,7 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat2 = new Date();
-    datms1=dat1.getTime()-1000*60*57; // Set countdown time to 3 min  
+    datms1=dat1.getTime()-1000*60*59; // Set countdown time to 1 min  
     datms2=dat2.getTime(); 	  
     dat.setTime( datms1 - datms2 );  
     openFullscreen();
