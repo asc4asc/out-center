@@ -14,7 +14,7 @@ tmp.style.backgroundColor = "blue";
 (function () {
   	function uhrzeit() {
           if (i == 1) {	
-		var jetzt = dat; // new Date();
+		var jetzt = new Date(); // dat; // 
 		var h = jetzt.getHours(); 
 		var m = jetzt.getMinutes();
 		var s = jetzt.getSeconds();
