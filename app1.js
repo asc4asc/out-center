@@ -16,7 +16,7 @@ tmp.style.backgroundColor = "blue";
           if (i == 1) {	// display
 		dat = new Date();  // if dat=0 do not set it!
 		datms2 = dat.getTime(); 
-		dat.setTime( datms1 - datms2 );   
+		dat.setTime( datms2 - datms1 );   
 		if ( datms3 == 0 ) {
 		  var h=0; 
 		  var m=0; 
@@ -62,7 +62,7 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat2 = new Date();
-    datms1=dat1.getTime()-1000*60*59; // Set countdown time to 1 min  
+    datms1=dat1.getTime()+1000*60*59; // Set countdown time to 1 min  
     datms2=dat2.getTime(); 
     if ( datms1 < datms2 ) {	  
       datms3 = datms1 - datms2 ;  
