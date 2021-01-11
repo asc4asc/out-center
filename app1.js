@@ -14,6 +14,9 @@ tmp.style.backgroundColor = "blue";
 
 (function () {
   	function uhrzeit() {
+	  var datms6 = datms1 - datms2 + 1000*60*60;
+	  if ( datms6 < 0 ) { datms3= 0; }	
+	  if ( datms3 == 0 ) { i= 0; }		
           if (i == 1) {	// display
 		dat = new Date();  // if dat=0 do not set it!
 		datms2 = dat.getTime(); 
@@ -34,12 +37,8 @@ tmp.style.backgroundColor = "blue";
 		s = fuehrendeNull(s);
 		ms = fuehrendeNullen(ms);
 		tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
-	  }
-	  // if (dat2 - dat1-1000*60*59 < 0) { i=0; } // check it time is gone? Set timer to display to zero. 
+	  } 
 	  setTimeout(uhrzeit, 1);
-          var datms6 = datms1 - datms2 + 1000*60*60;
-	  if ( datms6 < 0 ) { datms3= 0; }	
-	  if ( datms3 == 0 ) { i= 0; }	
 	}
 
 	function fuehrendeNull(zahl) {
