@@ -5,6 +5,7 @@ let tmp1=document.querySelector("clock");
 let dat=new Date();
 let dat1=new Date();
 let dat2=new Date();
+let datms3=dat.gettime();
 let datms1=dat.getTime();
 let datms2=dat.getTime();
 
@@ -15,8 +16,9 @@ tmp.style.backgroundColor = "blue";
   	function uhrzeit() {
           if (i == 1) {	// display
 		dat = new Date();  // if dat=0 do not set it!
-		datms2 = dat.getTime();  
+		datms2 = dat.getTime(); 
 		dat.setTime( datms1 - datms2 );   
+		if ( datms3 == 0 ) { dat = 0; }
 		var jetzt = dat; // new Date(); //
 		var h = jetzt.getHours(); 
 		var m = jetzt.getMinutes();
@@ -29,7 +31,7 @@ tmp.style.backgroundColor = "blue";
 	  }
 	  // if (dat2 - dat1-1000*60*59 < 0) { i=0; } // check it time is gone? Set timer to display to zero. 
 	  setTimeout(uhrzeit, 1);
-		
+	  if ( datms3 == 0 ) { i=0; }	
 	}
 
 	function fuehrendeNull(zahl) {
@@ -58,10 +60,10 @@ document.body.addEventListener("click", event => {
     datms1=dat1.getTime()-1000*60*59; // Set countdown time to 1 min  
     datms2=dat2.getTime(); 
     if ( daten1 < daten2 - 1000*60*59) {	  
-      dat.setTime( datms1 - datms2 );  
+      datms3 = datms1 - datms2 ;  
     }
     else {
-      dat.setTime( 0 );
+      datms3 = 0 ;
     }
 			    
 		    
