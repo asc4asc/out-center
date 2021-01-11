@@ -64,7 +64,7 @@ document.body.addEventListener("click", event => {
     dat2 = new Date();
     datms1=dat1.getTime()-1000*60*59; // Set countdown time to 1 min  
     datms2=dat2.getTime(); 
-    if ( datms1 < datms2 - 1000*60*59) {	  
+    if ( datms1 < datms2 ) {	  
       datms3 = datms1 - datms2 ;  
     }
     else {
