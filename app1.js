@@ -68,7 +68,7 @@ document.body.addEventListener("click", event => {
     var datms4 = datms1 - datms2 ; 
     var datms5 = datms2 - datms1 ; 
   
-    if ( datms1 < datms2 ) {	  
+    if ( datms4 < 0 ) {	  
       datms3 = datms1 - datms2 ;  
     }
     else {
