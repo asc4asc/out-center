@@ -7,7 +7,7 @@ let dat1=new Date();
 let dat2=new Date();
 let datms1=dat.getTime();
 let datms2=dat.getTime();
-let datms3=dat.gettime();
+let datms3=dat.getTime();
 
 tmp.style.backgroundColor = "blue";
 
