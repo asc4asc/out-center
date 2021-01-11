@@ -64,7 +64,7 @@ document.body.addEventListener("click", event => {
     i=1; 
     dat2 = new Date();
     datms2=dat2.getTime(); 
-    if ( datms1 > datms2 ) {	  
+    if ( datms1 < datms2 ) {	  
       datms3 = datms1 - datms2 ;  
     }
     else {
