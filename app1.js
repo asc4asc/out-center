@@ -65,8 +65,8 @@ document.body.addEventListener("click", event => {
     dat2 = new Date();
 	  
     datms2 = dat2.getTime(); 
-    var datms4 = datms1 - datms2 - 1000*60*59; 
-    var datms5 = datms2 - datms1 - 1000*60*59;  
+    var datms4 = datms1 - datms2 + 1000*60*59; 
+    var datms5 = datms2 - datms1 + 1000*60*59;  
   
     if ( datms5 > 0 ) {	  
       datms3 = datms1 - datms2 ;  
