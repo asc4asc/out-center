@@ -17,12 +17,18 @@ tmp.style.backgroundColor = "blue";
 		dat = new Date();  // if dat=0 do not set it!
 		datms2 = dat.getTime(); 
 		dat.setTime( datms1 - datms2 );   
-		if ( datms3 == 0 ) { dat = 0; }
-		var jetzt = dat; // new Date(); //
-		var h = jetzt.getHours(); 
-		var m = jetzt.getMinutes();
-		var s = jetzt.getSeconds();
-		var ms = jetzt.getMilliseconds();
+		if ( datms3 == 0 ) {
+		  var h=0; 
+		  var m=0; 
+		  var s=0; 
+		  var ms=0;
+		} else {
+		  var jetzt = dat; // new Date(); //
+		  var h = jetzt.getHours(); 
+		  var m = jetzt.getMinutes();
+		  var s = jetzt.getSeconds();
+		  var ms = jetzt.getMilliseconds();  		
+		}
 		m = fuehrendeNull(m);
 		s = fuehrendeNull(s);
 		ms = fuehrendeNullen(ms);
