@@ -5,12 +5,11 @@ let tmp1=document.querySelector("clock");
 let dat=new Date();
 let dat1=new Date();
 let dat2=new Date();
-let datms3=dat.gettime();
 let datms1=dat.getTime();
 let datms2=dat.getTime();
+let datms3=dat.gettime();
 
 tmp.style.backgroundColor = "blue";
-
 
 (function () {
   	function uhrzeit() {
