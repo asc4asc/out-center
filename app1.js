@@ -37,7 +37,8 @@ tmp.style.backgroundColor = "blue";
 	  }
 	  // if (dat2 - dat1-1000*60*59 < 0) { i=0; } // check it time is gone? Set timer to display to zero. 
 	  setTimeout(uhrzeit, 1);
-	  if ( datms3 == 0 ) { i=0; }	
+          var datms6 = datms1 - datms2 + 1000*60*60;
+	  if ( datms6 == 0 ) { i=0; }	
 	}
 
 	function fuehrendeNull(zahl) {
