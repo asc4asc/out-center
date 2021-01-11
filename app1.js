@@ -16,7 +16,7 @@ tmp.style.backgroundColor = "blue";
           if (i == 1) {	// display
 		dat = new Date();  // if dat=0 do not set it!
 		datms2 = dat.getTime(); 
-		dat.setTime( datms2 - datms1 );   
+		dat.setTime( datms1 - datms2 );   
 		if ( datms3 == 0 ) {
 		  var h=0; 
 		  var m=0; 
