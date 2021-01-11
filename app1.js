@@ -6,6 +6,7 @@ let dat=new Date();
 let dat1=new Date();
 let dat2=new Date();
 let datms1=dat.getTime();
+    datms1=datms1+1000*60*59;
 let datms2=dat.getTime();
 let datms3=dat.getTime();
 
@@ -62,7 +63,6 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat2 = new Date();
-    datms1=dat1.getTime()+1000*60*59; // Set countdown time to 1 min  
     datms2=dat2.getTime(); 
     if ( datms1 > datms2 ) {	  
       datms3 = datms1 - datms2 ;  
