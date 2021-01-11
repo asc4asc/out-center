@@ -63,15 +63,17 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat2 = new Date();
-    datms2=dat2.getTime(); 
+	  
+    datms2 = dat2.getTime(); 
+    datms3 = datms1 - datms2 ; 
+    datms3 = datms2 - datms1 ; 
+  
     if ( datms1 < datms2 ) {	  
       datms3 = datms1 - datms2 ;  
     }
     else {
       datms3 = 0 ;
     }
-			    
-		    
     // openFullscreen();
   }
 });
