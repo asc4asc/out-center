@@ -56,9 +56,16 @@ document.body.addEventListener("click", event => {
     i=1; 
     dat2 = new Date();
     datms1=dat1.getTime()-1000*60*59; // Set countdown time to 1 min  
-    datms2=dat2.getTime(); 	  
-    dat.setTime( datms1 - datms2 );  
-    openFullscreen();
+    datms2=dat2.getTime(); 
+    if ( daten1 < daten2 - 1000*60*59) {	  
+      dat.setTime( datms1 - datms2 );  
+    }
+    else {
+      dat.setTime( 0 );
+    }
+			    
+		    
+    // openFullscreen();
   }
 });
 
