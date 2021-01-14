@@ -27,7 +27,7 @@ tmp.style.backgroundColor = "blue";
 		  var s=0; 
 		  var ms=0;
 		} else {
-		  if ( sw1 == 1 ) { 
+		  if ( sw1 == 0 ) { 
 	            var jetzt = dat; // new Date(); //
 		    var h = jetzt.getHours(); 
 		    var m = jetzt.getMinutes();
