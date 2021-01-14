@@ -18,7 +18,7 @@ tmp.style.backgroundColor = "blue";
   	function uhrzeit() {
 	  var datms6 = datms1 - datms2 + 1000*60*60;
 	  if ( datms6 < 0 ) { datms3= 0; }	
-          if (i == 1) {	// display
+          if (i == 1 || sw1 == 1 ) { // display
 		dat = new Date();  // if dat=0 do not set it!
 		datms2 = dat.getTime(); 
 		dat.setTime( datms1 - datms2 );   
@@ -28,7 +28,7 @@ tmp.style.backgroundColor = "blue";
 		  var s=0; 
 		  var ms=0;
 		} else {
-		  if ( sw1 > 0 ) { 
+		  if ( sw1 == 0 ) { 
 	            var jetzt = dat; // new Date(); //
 		    var h = jetzt.getHours(); 
 		    var m = jetzt.getMinutes();
