@@ -1,5 +1,6 @@
 "use strict";  
 
+// refactoring code!
 let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
 let dat=new Date();
@@ -32,10 +33,13 @@ tmp.style.backgroundColor = "blue";
 		  var s = jetzt.getSeconds();
 		  var ms = jetzt.getMilliseconds();  		
 		}
+		if ( m < 1 && s < 10 ) { tmp.style.backgroundColor = "red"; }
+		// put data out!  
 		m = fuehrendeNull(m);
 		s = fuehrendeNull(s);
 		ms = fuehrendeNullen(ms);
-		tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
+		// tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
+		tmp1.innerHTML = m + ':' + s + ':' + ms; // display only what is needed.
 	  } 
 	  if ( datms3 == 0 ) { i= 0; }		
 	  setTimeout(uhrzeit, 1);
@@ -55,11 +59,14 @@ tmp.style.backgroundColor = "blue";
 }());
 
 let i=1;
+// openFullscreen();
+// set starttime display it and wait for click/touch
+
 document.body.addEventListener("click", event => {
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0; 
-    window.navigator.vibrate(1000);
+    // window.navigator.vibrate(1000);
   } else {
     tmp.style.backgroundColor = "yellow";
     i=1; 
@@ -75,7 +82,6 @@ document.body.addEventListener("click", event => {
     else {
       datms3 = 0 ;
     }
-    // openFullscreen();
   }
 });
 
