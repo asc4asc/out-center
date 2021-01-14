@@ -35,7 +35,7 @@ tmp.style.backgroundColor = "blue";
 		}
 		if ( m < 1 && s < 10 ) { tmp.style.backgroundColor = "red"; }
 		// put data out!  
-		m = fuehrendeNull(m);
+		// m = fuehrendeNull(m);
 		s = fuehrendeNull(s);
 		ms = fuehrendeNullen(ms);
 		// tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
