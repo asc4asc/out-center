@@ -61,6 +61,7 @@ tmp.style.backgroundColor = "blue";
 let i=1;
 // openFullscreen();
 // set starttime display it and wait for click/touch
+datms3 = 0 ;
 
 document.body.addEventListener("click", event => {
   if (i == 1) {
