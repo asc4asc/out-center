@@ -27,11 +27,18 @@ tmp.style.backgroundColor = "blue";
 		  var s=0; 
 		  var ms=0;
 		} else {
-		  var jetzt = dat; // new Date(); //
-		  var h = jetzt.getHours(); 
-		  var m = jetzt.getMinutes();
-		  var s = jetzt.getSeconds();
-		  var ms = jetzt.getMilliseconds();  		
+		  if ( sw1 == 1 ) { 
+	            var jetzt = dat; // new Date(); //
+		    var h = jetzt.getHours(); 
+		    var m = jetzt.getMinutes();
+		    var s = jetzt.getSeconds();
+		    var ms = jetzt.getMilliseconds(); 
+		  } else {
+		    var h=0; 
+		    var m=1; 
+		    var s=0; 
+		    var ms=0;  
+		  }   		
 		}
 		if ( m < 1 && s < 10 ) { tmp.style.backgroundColor = "red"; }
 		// put data out!  
@@ -61,9 +68,11 @@ tmp.style.backgroundColor = "blue";
 let i=1;
 // openFullscreen();
 // set starttime display it and wait for click/touch
-datms3 = 0 ;
+datms3 = 0;
+let sw1 = 1;
 
 document.body.addEventListener("click", event => {
+  sw1 = 0;	
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0; 
