@@ -10,6 +10,7 @@ let datms1=dat.getTime();
     datms1=datms1-1000*60*59;
 let datms2=dat.getTime();
 let datms3=dat.getTime();
+let sw1 = 1;
 
 tmp.style.backgroundColor = "blue";
 
@@ -17,11 +18,11 @@ tmp.style.backgroundColor = "blue";
   	function uhrzeit() {
 	  var datms6 = datms1 - datms2 + 1000*60*60;
 	  if ( datms6 < 0 ) { datms3= 0; }	
-          // if (i == 1) {	// display
+          if (i == 1) {	// display
 		dat = new Date();  // if dat=0 do not set it!
 		datms2 = dat.getTime(); 
 		dat.setTime( datms1 - datms2 );   
-		if ( datms3 == 0 && sw == 0 ) {
+		if ( datms3 == 0 && sw1 == 0 ) {
 		  var h=0; 
 		  var m=0; 
 		  var s=0; 
@@ -47,7 +48,7 @@ tmp.style.backgroundColor = "blue";
 		ms = fuehrendeNullen(ms);
 		// tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
 		tmp1.innerHTML = m + ':' + s + ':' + ms; // display only what is needed.
-	  // } 
+	  } 
 	  if ( datms3 == 0 ) { i= 0; }		
 	  setTimeout(uhrzeit, 1);
 	}
@@ -69,7 +70,6 @@ let i=1;
 // openFullscreen();
 // set starttime display it and wait for click/touch
 datms3 = 0;
-let sw1 = 1;
 
 document.body.addEventListener("click", event => {
   sw1 = 0;	
