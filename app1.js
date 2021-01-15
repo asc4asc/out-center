@@ -9,7 +9,7 @@ let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
 let dat=new Date();
 //let dat1=new Date();
-let dat2=new Date();
+//let dat2=new Date();
 let datms1=dat.getTime()-StartTime;
 let datms2=dat.getTime();
 let datms3=dat.getTime();
@@ -87,9 +87,9 @@ document.body.addEventListener("click", event => {
   } else {
     tmp.style.backgroundColor = "yellow";
     i=1; 
-    dat2 = new Date();
+    dat = new Date();
 	  
-    datms2 = dat2.getTime(); 
+    datms2 = dat.getTime(); 
     var datms4 = datms1 - datms2 + EndTime; 
     // var datms5 = datms2 - datms1 + 1000*60*60; no use?  
   
