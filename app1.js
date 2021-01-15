@@ -1,13 +1,17 @@
 "use strict";  
 
 // refactoring code!
+const CountTime= 1; // z.B. 1 min
+const EndTime = 1000*60*60; 
+const StartTime= 1000*60*(60-CountTime);  
+
 let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
 let dat=new Date();
 let dat1=new Date();
 let dat2=new Date();
 let datms1=dat.getTime();
-    datms1=datms1-1000*60*59;
+    datms1=datms1-StartTime;
 let datms2=dat.getTime();
 let datms3=dat.getTime();
 let sw1 = 1;
@@ -83,7 +87,7 @@ document.body.addEventListener("click", event => {
     dat2 = new Date();
 	  
     datms2 = dat2.getTime(); 
-    var datms4 = datms1 - datms2 + 1000*60*60; 
+    var datms4 = datms1 - datms2 + EndTime; 
     // var datms5 = datms2 - datms1 + 1000*60*60; no use?  
   
     if ( datms4 > 0 ) {	  
