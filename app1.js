@@ -40,7 +40,7 @@ tmp.style.backgroundColor = "blue";
 		    var ms = jetzt.getMilliseconds(); 
 		  } else {
 		    var h=0; 
-		    var m=1; 
+		    var m=CountTime; 
 		    var s=0; 
 		    var ms=0;  
 		  }   		
