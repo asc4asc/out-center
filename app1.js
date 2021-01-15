@@ -19,7 +19,7 @@ tmp.style.backgroundColor = "blue";
 
 (function () {
   	function uhrzeit() {
-	  var datms6 = datms1 - datms2 + 1000*60*60;
+	  var datms6 = datms1 - datms2 + EndTime;
 	  if ( datms6 < 0 ) { datms3= 0; }	
           if (i == 1 || sw1 == 1 ) { // display
 		dat = new Date();  // if dat=0 do not set it!
@@ -88,11 +88,8 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat = new Date();
-	  
     datms2 = dat.getTime(); 
     var datms4 = datms1 - datms2 + EndTime; 
-    // var datms5 = datms2 - datms1 + 1000*60*60; no use?  
-  
     if ( datms4 > 0 ) {	  
       datms3 = datms1 - datms2 ;  
     }
