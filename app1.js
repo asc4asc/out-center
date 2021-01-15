@@ -76,10 +76,10 @@ let i=1;
 datms3 = 0;
 
 document.body.addEventListener("click", event => {
-  if ( sw1 > 0 ) {
-    datms1=dat.getTime();
-    datms1=datms1-StartTime;
-  }
+  //if ( sw1 > 0 ) {
+  //  datms1=dat.getTime();
+  //  datms1=datms1-StartTime;
+  //}
   sw1 = 0;	
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
