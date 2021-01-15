@@ -11,7 +11,7 @@ let dat=new Date();
 let dat1=new Date();
 let dat2=new Date();
 let datms1=dat.getTime();
-//    datms1=datms1-StartTime;
+    datms1=datms1-StartTime;
 let datms2=dat.getTime();
 let datms3=dat.getTime();
 let sw1 = 1;
@@ -77,8 +77,8 @@ datms3 = 0;
 
 document.body.addEventListener("click", event => {
   if ( sw1 > 0 ) {
-    datms1=dat.getTime();
-    datms1=datms1-StartTime;
+    dat=new Date();	  
+    datms1=dat.getTime()-StartTime;
   }
   sw1 = 0;	
   if (i == 1) {
