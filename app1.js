@@ -77,7 +77,7 @@ datms3 = 0;
 
 document.body.addEventListener("click", event => {
   if ( sw1 > 0 ) {
-  //  datms1=dat.getTime();
+    datms1=dat.getTime();
     datms1=datms1-StartTime;
   }
   sw1 = 0;	
