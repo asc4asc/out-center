@@ -1,7 +1,9 @@
 "use strict";  
 
 // refactoring code! Better var names, less global vars!
-const CountTime= 5; // z.B. 1 min
+const CountTime= 5; // examole 1 min
+const WarnTime=5; // example 10 seconds
+
 const EndTime = 1000*60*60; 
 const StartTime= 1000*60*(60-CountTime);  
 
@@ -48,9 +50,11 @@ tmp.style.backgroundColor = "blue";
 	  var ms=0;  
         }   		
       }
-      if ( m < 1 && s < 10 ) { tmp.style.backgroundColor = "red"; }
+      if ( m < 1 && s < WarnTime ) { 
+	tmp.style.backgroundColor = "red"; 
+      }
       // put data out!  
-        // m = fuehrendeNull(m);
+      // m = fuehrendeNull(m);
       s = fuehrendeNull(s);
       ms = fuehrendeNullen(ms);
       // tp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
