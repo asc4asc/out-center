@@ -18,55 +18,59 @@ let sw1 = 1;
 tmp.style.backgroundColor = "blue";
 
 (function () {
-  	function uhrzeit() {
-	  var datms6 = datms1 - datms2 + EndTime;
-	  if ( datms6 < 0 ) { datms3= 0; }	
-          if (i == 1 || sw1 == 1 ) { // display
-		dat = new Date();  // if dat=0 do not set it!
-		datms2 = dat.getTime(); 
-		dat.setTime( datms1 - datms2 );   
-		if ( datms3 == 0 && sw1 == 0 ) {
-		  var h=0; 
-		  var m=0; 
-		  var s=0; 
-		  var ms=0;
-		} else {
-		  if ( sw1 == 0 ) { 
-	            var jetzt = dat; // new Date(); //
-		    var h = jetzt.getHours(); 
-		    var m = jetzt.getMinutes();
-		    var s = jetzt.getSeconds();
-		    var ms = jetzt.getMilliseconds(); 
-		  } else {
-		    var h=0; 
-		    var m=CountTime; 
-		    var s=0; 
-		    var ms=0;  
-		  }   		
-		}
-		if ( m < 1 && s < 10 ) { tmp.style.backgroundColor = "red"; }
-		// put data out!  
-		// m = fuehrendeNull(m);
-		s = fuehrendeNull(s);
-		ms = fuehrendeNullen(ms);
-		// tmp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
-		tmp1.innerHTML = m + ':' + s + ':' + ms; // display only what is needed.
-	  } 
-	  if ( datms3 == 0 ) { i= 0; }		
-	  setTimeout(uhrzeit, 1);
-	}
+  function uhrzeit() {
+  var datms6 = datms1 - datms2 + EndTime;
+    if ( datms6 < 0 ) { 
+      datms3= 0; 
+    }	
+    if (i == 1 || sw1 == 1 ) { // update display
+      dat = new Date();  // if dat=0 do not set it!
+      datms2 = dat.getTime(); 
+      dat.setTime( datms1 - datms2 );   
+      if ( datms3 == 0 && sw1 == 0 ) {
+	var h=0; 
+	var m=0; 
+	var s=0; 
+	var ms=0;
+      } else { 
+	if ( sw1 == 0 ) { 
+	  var jetzt = dat; // new Date(); //
+	  var h = jetzt.getHours(); 
+	  var m = jetzt.getMinutes();
+	  var s = jetzt.getSeconds();
+	  var ms = jetzt.getMilliseconds(); 
+        } else {
+          var h=0; 
+	  var m=CountTime; 
+	  var s=0; 
+	  var ms=0;  
+        }   		
+      }
+      if ( m < 1 && s < 10 ) { tmp.style.backgroundColor = "red"; }
+      // put data out!  
+        // m = fuehrendeNull(m);
+      s = fuehrendeNull(s);
+      ms = fuehrendeNullen(ms);
+      // tp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
+      tmp1.innerHTML = m + ':' + s + ':' + ms; // display only what is needed.
+    } 
+    if ( datms3 == 0 ) { 
+      i= 0; 
+    }		
+    setTimeout(uhrzeit, 1);
+  }
 
-	function fuehrendeNull(zahl) {
-		zahl = (zahl < 10 ? '0' : '') + zahl;
-		return zahl;
-	}
-	function fuehrendeNullen(zahl) {
-		zahl = (zahl < 10 ? '0' : '') + zahl;
-		zahl = (zahl < 100 ? '0' : '') + zahl;
-		return zahl;
-	}
-
-	document.addEventListener('DOMContentLoaded', uhrzeit);
+  function fuehrendeNull(zahl) {
+    zahl = (zahl < 10 ? '0' : '') + zahl;
+    return zahl;
+  }
+  function fuehrendeNullen(zahl) {
+    zahl = (zahl < 10 ? '0' : '') + zahl;
+    zahl = (zahl < 100 ? '0' : '') + zahl;
+    return zahl;
+  }
+	
+  document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
 
 let i=1;
