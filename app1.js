@@ -1,7 +1,7 @@
 "use strict";  
 
 // refactoring code!
-const CountTime= 1; // z.B. 1 min
+const CountTime= 2; // z.B. 1 min
 const EndTime = 1000*60*60; 
 const StartTime= 1000*60*(60-CountTime);  
 
