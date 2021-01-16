@@ -1,7 +1,7 @@
 "use strict";  
 
 // refactoring code!
-const CountTime= 2; // z.B. 1 min
+const CountTime= 1; // z.B. 1 min
 const EndTime = 1000*60*60; 
 const StartTime= 1000*60*(60-CountTime);  
 
@@ -12,8 +12,8 @@ let dat=new Date(); // init var only for cases that something go wrong?
 let datms1=dat.getTime()-StartTime;
 let sw1 = 1; // switch1 is start count time.
 
-let datms2=dat.getTime();
-let datms3=dat.getTime();
+// let datms2=dat.getTime(); // temp var for time?
+let datms3=dat.getTime(); // globale end time. if 0 stop.
 
 
 tmp.style.backgroundColor = "blue";
@@ -26,7 +26,7 @@ tmp.style.backgroundColor = "blue";
     }	
     if (i == 1 || sw1 == 1 ) { // update display
       dat = new Date();  // if dat=0 do not set it!
-      datms2 = dat.getTime(); 
+      let datms2 = dat.getTime(); 
       dat.setTime( datms1 - datms2 );   
       if ( datms3 == 0 && sw1 == 0 ) {
 	var h=0; 
@@ -74,7 +74,7 @@ tmp.style.backgroundColor = "blue";
   document.addEventListener('DOMContentLoaded', uhrzeit);
 }());
 
-let i=1;
+let i=1; // switch beetween start and stop counter.
 // openFullscreen();
 // set starttime display it and wait for click/touch
 datms3 = 0;
@@ -93,7 +93,7 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat = new Date();
-    datms2 = dat.getTime(); 
+    let datms2 = dat.getTime(); 
     var datms4 = datms1 - datms2 + EndTime; 
     if ( datms4 > 0 ) {	  
       datms3 = datms1 - datms2 ;  
