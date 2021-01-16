@@ -1,8 +1,7 @@
-# Hallo PWA (Only a copy please use the original !!!)
+# PMA APP Countdown
 
-Das klassische "Hello World" program als "Progressive Web App"
+Ich habe meine erste App. hinzugefügt ein einfacher Button der runterzählt...... 
 
-Ich habe meine erste App. hinzugefügt ein einfacher Button der hochzählt...... 
 
 ## Vom Original:
 
@@ -10,7 +9,7 @@ I've also written a tutorial to go along with the code. Read it on Medium:
 
 https://medium.com/james-johnson/a-simple-progressive-web-app-tutorial-f9708e5f2605
 
-## Demo
+## PWA Demo
 
 https://asc4asc.github.io/pwa1/
 
