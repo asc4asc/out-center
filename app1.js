@@ -1,6 +1,6 @@
 "use strict";  
 
-// refactoring code!
+// refactoring code! Better var names, less global vars!
 const CountTime= 1; // z.B. 1 min
 const EndTime = 1000*60*60; 
 const StartTime= 1000*60*(60-CountTime);  
@@ -20,7 +20,7 @@ datms3 = 0;
 tmp.style.backgroundColor = "blue";
 
 (function () {
-  function uhrzeit() {
+  function timeMe() {
   var datms6 = datms1 - datms2 + EndTime;
     if ( datms6 < 0 ) { 
       datms3= 0; 
@@ -59,7 +59,7 @@ tmp.style.backgroundColor = "blue";
     if ( datms3 == 0 ) { 
       i= 0; 
     }		
-    setTimeout(uhrzeit, 1);
+    setTimeout(timeMe, 1);
   }
 
   function fuehrendeNull(zahl) {
@@ -72,7 +72,7 @@ tmp.style.backgroundColor = "blue";
     return zahl;
   }
 	
-  document.addEventListener('DOMContentLoaded', uhrzeit);
+  document.addEventListener('DOMContentLoaded', timeMe);
 }());
 
 
