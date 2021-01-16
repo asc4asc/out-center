@@ -1,8 +1,8 @@
 "use strict";  
 
 // refactoring code! Better var names, less global vars!
-const CountTime= 5; // examole 1 min
-const WarnTime=5; // example 10 seconds
+const CountTime= 1; // examole 1 min
+const WarnTime= 5; // example 10 seconds
 
 const EndTime = 1000*60*60; 
 const StartTime= 1000*60*(60-CountTime);  
@@ -39,10 +39,10 @@ tmp.style.backgroundColor = "blue";
       } else { 
 	if ( sw1 == 0 ) { 
 	  var jetzt = dat; // new Date(); //
-	  var h = jetzt.getHours(); 
-	  var m = jetzt.getMinutes();
-	  var s = jetzt.getSeconds();
-	  var ms = jetzt.getMilliseconds(); 
+	  var h = dat.getHours(); 
+	  var m = dat.getMinutes();
+	  var s = dat.getSeconds();
+	  var ms = dat.getMilliseconds(); 
         } else {
           var h=0; 
 	  var m=CountTime; 
