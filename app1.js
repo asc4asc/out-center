@@ -7,13 +7,14 @@ const StartTime= 1000*60*(60-CountTime);
 
 let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
-let dat=new Date();
-//let dat1=new Date();
-//let dat2=new Date();
+
+let dat=new Date(); // init var only for cases that something go wrong?
 let datms1=dat.getTime()-StartTime;
+let sw1 = 1; // switch1 is start count time.
+
 let datms2=dat.getTime();
 let datms3=dat.getTime();
-let sw1 = 1;
+
 
 tmp.style.backgroundColor = "blue";
 
