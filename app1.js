@@ -16,8 +16,8 @@ let sw1 = 1; // switch1 is start count time.
 let i=1; // switch beetween start and stop counter.
 
 let datms2=dat.getTime(); // temp var for time? why?
-let datms3=dat.getTime(); // globale end time. if 0 stop.
-datms3 = 0;
+// let datms3=dat.getTime(); // globale end time. if 0 stop.
+let datms3 = 0;
 
 tmp.style.backgroundColor = "blue";
 
@@ -38,7 +38,6 @@ tmp.style.backgroundColor = "blue";
 	var ms=0;
       } else { 
 	if ( sw1 == 0 ) { 
-	  var jetzt = dat; // new Date(); //
 	  var h = dat.getHours(); 
 	  var m = dat.getMinutes();
 	  var s = dat.getSeconds();
@@ -57,7 +56,7 @@ tmp.style.backgroundColor = "blue";
       // m = fuehrendeNull(m);
       s = fuehrendeNull(s);
       ms = fuehrendeNullen(ms);
-      // tp1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
+      // tpm1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
       tmp1.innerHTML = m + ':' + s + ':' + ms; // display only what is needed.
     } 
     if ( datms3 == 0 ) { 
