@@ -1,7 +1,7 @@
 "use strict";  
 
 // refactoring code! Better var names, less global vars!
-const CountTime= 1; // examole 1 min
+const CountTime= 3; // examole 1 min
 const WarnTime= 5; // example 10 seconds
 
 const EndTime = 1000*60*60; 
