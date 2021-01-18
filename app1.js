@@ -51,20 +51,20 @@ function timeMe(datms1) {
 
 document.body.addEventListener("click", event => {
   if ( sw1 > 0 ) {	  
-    datms1 = 1000*60*60 ;  
+    datms1 = 100*60*60 ;  
     timeMe(datms1);
   }
   sw1 = 0;	
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0;
-    datms1 = 1000*60*40 ; 
+    datms1 = 100*60*40 ; 
     timeMe(datms1);
     // window.navigator.vibrate(1000);
   } else {
     tmp.style.backgroundColor = "yellow";
     i=1; 
-    datms1 = 1000*60*30 ;  
+    datms1 = 100*60*30 ;  
     timeMe(datms1); 
 
   }
@@ -72,5 +72,5 @@ document.body.addEventListener("click", event => {
 
 var elem = document.documentElement;
 dat = new Date();
-datms1 = 1000*60;  
+datms1 = 100*60;  
 timeMe(datms1);
