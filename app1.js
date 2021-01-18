@@ -7,6 +7,7 @@ let tmp1=document.querySelector("clock");
 
 let i=0; // switch beetween start and stop counter.
 var dat=new Date();
+var datms1=0;
 
 tmp.style.backgroundColor = "blue";
 
