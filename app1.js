@@ -80,13 +80,13 @@ document.body.addEventListener("click", event => {
   if ( sw1 > 0 ) {
     dat=new Date();	  
     datms1=dat.getTime()-StartTime;
-    function timeMe();
+    timeMe();
   }
   sw1 = 0;	
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0; 
-    function timeMe();
+    timeMe();
     // window.navigator.vibrate(1000);
   } else {
     tmp.style.backgroundColor = "yellow";
@@ -100,7 +100,7 @@ document.body.addEventListener("click", event => {
     else {
       datms3 = 0 ;
     }
-    function timeMe(); 
+    timeMe(); 
 
   }
 });
