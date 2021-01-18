@@ -64,9 +64,8 @@ document.body.addEventListener("click", event => {
   } else {
     tmp.style.backgroundColor = "yellow";
     i=1; 
-    datms1 = 1 ;  
+    datms1 = 1000 ;  
     timeMe(datms1); 
-
   }
 });
 
