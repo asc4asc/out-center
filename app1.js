@@ -26,7 +26,7 @@ tmp.style.backgroundColor = "blue";
     if ( datms6 < 0 ) { 
       datms3= 0; 
     }	
-    if (i == 1 || sw1 == 1 ) { // update display
+    // if (i == 1 || sw1 == 1 ) { // update display
       dat = new Date();  // if dat=0 do not set it!
       datms2 = dat.getTime(); 
       dat.setTime( datms1 - datms2 );   
@@ -47,7 +47,7 @@ tmp.style.backgroundColor = "blue";
 	  var s=0; 
 	  var ms=0;  
         }   		
-      }
+      //}
       if ( m < 1 && s < WarnTime ) { 
 	tmp.style.backgroundColor = "red"; 
       }
