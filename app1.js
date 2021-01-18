@@ -6,6 +6,7 @@ let tmp=document.querySelector("body");
 let tmp1=document.querySelector("clock");
 
 let i=0; // switch beetween start and stop counter.
+var dat=new Date();
 
 tmp.style.backgroundColor = "blue";
 
@@ -55,6 +56,5 @@ document.body.addEventListener("click", event => {
 });
 
 var elem = document.documentElement;
-dat = new Date();
 datms1 = 1000*60*1;  
 timeMe(datms1);
