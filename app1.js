@@ -48,13 +48,13 @@ function timeMe(datms1) {
 document.body.addEventListener("click", event => {
    switch (i) {
     case 9:
-      var s = 'Hello Butt1 '+expr+'<br>'+s; 
+      var s = 'Hello Butt1 '+'<br>'+s; 
       break;
     case 2:
-      var s = 'Hello Butt2 '+expr+'<br>'+s; 
+      var s = 'Hello Butt2 '+'<br>'+s; 
       break;
     default:
-      var s = 'Hello Default '+expr+'<br>'+s; 
+      var s = 'Hello Default '+'<br>'+s; 
       if (i == 1) {
         tmp.style.backgroundColor = "green"; 
         i=0;
