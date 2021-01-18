@@ -47,30 +47,27 @@ function timeMe(datms1) {
 
 document.body.addEventListener("click", event => {
    switch (i) {
-    case 9:
-      var s = 'Hello Butt1 '+'<br>'+s; 
+    case 0:
+      tmp.style.backgroundColor = "green"; 
+      datms1 = 1000*60*4 ; 
+      timeMe(datms1);
       break;
-    case 2:
-      var s = 'Hello Butt2 '+'<br>'+s; 
+    case 1:
+      tmp.style.backgroundColor = "yellow";
+      datms1 = 1000*60*2 ;  
+      timeMe(datms1); 
       break;
     default:
-      var s = 'Hello Default '+'<br>'+s; 
-      if (i == 1) {
-        tmp.style.backgroundColor = "green"; 
-        i=0;
-        datms1 = 1000*60*4 ; 
-        timeMe(datms1);
-        // window.navigator.vibrate(1000);
-      } else {
-        tmp.style.backgroundColor = "yellow";
-        i=1; 
-        datms1 = 1000*60*2 ;  
-        timeMe(datms1); 
-      }
+      tmp.style.backgroundColor = "white"; 
+      datms1 = 1000*60*7 ; 
+      timeMe(datms1);
+      i=-1;
    }
+   i**:
 });
 
 var elem = document.documentElement;
 dat = new Date();
 datms1 = 1000*60*9;  
 timeMe(datms1);
+i=0;
