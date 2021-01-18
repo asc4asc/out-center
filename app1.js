@@ -55,7 +55,7 @@ function timeMe() {
 
 document.body.addEventListener("click", event => {
   if ( sw1 > 0 ) {	  
-    dat.setTime( 1000*60*60 );  
+    datks1 = 1000*60*60 ;  
     timeMe();
   }
   sw1 = 0;	
