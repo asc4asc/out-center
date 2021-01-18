@@ -22,7 +22,8 @@ let datms3 = 0;
 tmp.style.backgroundColor = "blue";
 
 function timeMe() {
-  dat = new Date();    
+  dat = new Date(); 
+  dat.setTime( datms1 ); 
   var h = dat.getHours(); 
   var m = dat.getMinutes();
   var s = dat.getSeconds();
