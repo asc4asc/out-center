@@ -64,7 +64,7 @@ document.body.addEventListener("click", event => {
   } else {
     tmp.style.backgroundColor = "yellow";
     i=1; 
-    datms1 = 100*60*30 ;  
+    datms1 = 1 ;  
     timeMe(datms1); 
 
   }
