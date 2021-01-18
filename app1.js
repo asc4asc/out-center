@@ -21,7 +21,7 @@ let datms3 = 0;
 
 tmp.style.backgroundColor = "blue";
 
-(function () {
+// (function () {
   function timeMe() {
   var datms6 = datms1 - datms2 + EndTime;
     if ( datms6 < 0 ) { 
@@ -75,23 +75,20 @@ tmp.style.backgroundColor = "blue";
     return zahl;
   }
 	
-  document.addEventListener('DOMContentLoaded', timeMe);
-}());
-
-
-// openFullscreen();
-// set starttime display it and wait for click/touch
-
+//  document.addEventListener('DOMContentLoaded', timeMe);
+// }());
 
 document.body.addEventListener("click", event => {
   if ( sw1 > 0 ) {
     dat=new Date();	  
     datms1=dat.getTime()-StartTime;
+    function timeMe();
   }
   sw1 = 0;	
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0; 
+    function timeMe();
     // window.navigator.vibrate(1000);
   } else {
     tmp.style.backgroundColor = "yellow";
@@ -105,18 +102,9 @@ document.body.addEventListener("click", event => {
     else {
       datms3 = 0 ;
     }
+    function timeMe(); 
+
   }
 });
 
 var elem = document.documentElement;
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.mozRequestFullScreen) { /* Firefox */
-    elem.mozRequestFullScreen();
-  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE/Edge */
-    elem.msRequestFullscreen();
-  }
-}
