@@ -44,17 +44,8 @@ function timeMe(datms1) {
     return zahl;
   }
 } 
-	  
-	
-//  document.addEventListener('DOMContentLoaded', timeMe);
-// }());
 
 document.body.addEventListener("click", event => {
-  if ( sw1 > 0 ) {	  
-    datms1 = 1000*60*6 ;  
-    timeMe(datms1);
-  }
-  sw1 = 0;	
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0;
