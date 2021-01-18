@@ -49,17 +49,17 @@ document.body.addEventListener("click", event => {
    switch (i) {
     case 0:
       tmp.style.backgroundColor = "green"; 
-      datms1 = 1000*60*4 ; 
+      datms1 = 1000*60*3 ; 
       timeMe(datms1);
       break;
     case 1:
-      tmp.style.backgroundColor = "yellow";
-      datms1 = 1000*60*2 ;  
+      tmp.style.backgroundColor = "red";
+      datms1 = 0 ;  
       timeMe(datms1); 
       break;
     default:
-      tmp.style.backgroundColor = "white"; 
-      datms1 = 1000*60*7 ; 
+      tmp.style.backgroundColor = "yellow"; 
+      datms1 = 111 ; 
       timeMe(datms1);
       i=-1;
    }
