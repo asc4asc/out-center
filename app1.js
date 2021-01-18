@@ -51,7 +51,7 @@ function timeMe(datms1) {
 
 document.body.addEventListener("click", event => {
   if ( sw1 > 0 ) {	  
-    datms1 = 100*60*60 ;  
+    datms1 = 1000*60*6 ;  
     timeMe(datms1);
   }
   sw1 = 0;	
@@ -64,12 +64,12 @@ document.body.addEventListener("click", event => {
   } else {
     tmp.style.backgroundColor = "yellow";
     i=1; 
-    datms1 = 1000 ;  
+    datms1 = 1000*60*2 ;  
     timeMe(datms1); 
   }
 });
 
 var elem = document.documentElement;
 dat = new Date();
-datms1 = 1000*60*3;  
+datms1 = 1000*60*9;  
 timeMe(datms1);
