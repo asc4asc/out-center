@@ -54,10 +54,8 @@ function timeMe() {
 // }());
 
 document.body.addEventListener("click", event => {
-  if ( sw1 > 0 ) {
-    dat=new Date();	  
+  if ( sw1 > 0 ) {	  
     dat.setTime( 1000*60*60 );  
-    datms1=dat.getTime()-StartTime;
     timeMe();
   }
   sw1 = 0;	
@@ -84,3 +82,5 @@ document.body.addEventListener("click", event => {
 });
 
 var elem = document.documentElement;
+dat.setTime( 1000*60*60 );  
+timeMe();
