@@ -69,14 +69,9 @@ document.body.addEventListener("click", event => {
     tmp.style.backgroundColor = "yellow";
     i=1; 
     dat = new Date();
+	   
     datms2 = dat.getTime(); 
-    var datms4 = datms1 - datms2 + EndTime; 
-    if ( datms4 > 0 ) {	  
-      datms3 = datms1 - datms2 ;  
-    }
-    else {
-      datms3 = 0 ;
-    }
+    datms1 = 1000*60*60 ;  
     timeMe(); 
 
   }
