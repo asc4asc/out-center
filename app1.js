@@ -21,18 +21,13 @@ let datms3 = 0;
 
 tmp.style.backgroundColor = "blue";
 
-function timeMe() {
-  dat = new Date(); 
+function timeMe(datms1) {
   dat.setTime( datms1 ); 
   var h = dat.getHours(); 
   var m = dat.getMinutes();
   var s = dat.getSeconds();
   var ms = dat.getMilliseconds(); 
-      
-  if ( m < 1 && s < WarnTime ) { 
-    tmp.style.backgroundColor = "red"; 
-  }
-  // put data out!  
+        
   // m = fuehrendeNull(m);
   s = fuehrendeNull(s);
   ms = fuehrendeNullen(ms);
@@ -57,27 +52,24 @@ function timeMe() {
 document.body.addEventListener("click", event => {
   if ( sw1 > 0 ) {	  
     datms1 = 1000*60*60 ;  
-    timeMe();
+    timeMe(datms1);
   }
   sw1 = 0;	
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0; 
-    timeMe();
+    timeMe(datms1);
     // window.navigator.vibrate(1000);
   } else {
     tmp.style.backgroundColor = "yellow";
     i=1; 
-    dat = new Date();
-	   
-    datms2 = dat.getTime(); 
-    datms1 = 1000*60*60 ;  
-    timeMe(); 
+    datms1 = 1000*60*30 ;  
+    timeMe(datms1); 
 
   }
 });
 
 var elem = document.documentElement;
 dat = new Date();
-datms1 = 1000*60*60 ;  
-timeMe();
+datms1 = 1000*60*10 ;  
+timeMe(datms1);
