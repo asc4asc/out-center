@@ -13,7 +13,7 @@ let tmp1=document.querySelector("clock");
 let dat=new Date(); // init var only for cases that something go wrong?
 let datms1=dat.getTime()-StartTime;
 let sw1 = 1; // switch1 is start count time.
-let i=1; // switch beetween start and stop counter.
+let i=0; // switch beetween start and stop counter.
 
 let datms2=dat.getTime(); // temp var for time? why?
 // let datms3=dat.getTime(); // globale end time. if 0 stop.
@@ -63,11 +63,10 @@ document.body.addEventListener("click", event => {
       timeMe(datms1);
       i=-1;
    }
-   i**:
+   i=i+1;
 });
 
 var elem = document.documentElement;
 dat = new Date();
 datms1 = 1000*60*9;  
 timeMe(datms1);
-i=0;
