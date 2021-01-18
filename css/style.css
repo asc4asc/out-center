@@ -1,6 +1,6 @@
 body {
   /* Computer Font not like a book for the APP */
-  font-family: Monospace ;
+  font-family: courier; /* Monospace ; */
 }
 
 /* Make content area fill the entire browser window */
