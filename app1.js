@@ -22,32 +22,13 @@ let datms3 = 0;
 tmp.style.backgroundColor = "blue";
 
   function timeMe() {
-  var datms6 = datms1 - datms2 + EndTime;
-    if ( datms6 < 0 ) { 
-      datms3= 0; 
-    }	
-    // if (i == 1 || sw1 == 1 ) { // update display
-      dat = new Date();  // if dat=0 do not set it!
-      datms2 = dat.getTime(); 
-      dat.setTime( datms1 - datms2 );   
-      if ( datms3 == 0 && sw1 == 0 ) {
-	var h=0; 
-	var m=0; 
-	var s=0; 
-	var ms=0;
-      } else { 
-	if ( sw1 == 0 ) { 
-	  var h = dat.getHours(); 
+      dat = datems1;  // if dat=0 do not set it!
+       dat.setTime( datms1 - datms2 );   
+      	  var h = dat.getHours(); 
 	  var m = dat.getMinutes();
 	  var s = dat.getSeconds();
 	  var ms = dat.getMilliseconds(); 
-        } else {
-          var h=0; 
-	  var m=CountTime; 
-	  var s=0; 
-	  var ms=0;  
-        }   		
-      //}
+      
       if ( m < 1 && s < WarnTime ) { 
 	tmp.style.backgroundColor = "red"; 
       }
