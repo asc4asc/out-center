@@ -21,7 +21,6 @@ let datms3 = 0;
 
 tmp.style.backgroundColor = "blue";
 
-// (function () {
   function timeMe() {
   var datms6 = datms1 - datms2 + EndTime;
     if ( datms6 < 0 ) { 
@@ -72,6 +71,7 @@ tmp.style.backgroundColor = "blue";
     zahl = (zahl < 100 ? '0' : '') + zahl;
     return zahl;
   }
+  }	  
 	
 //  document.addEventListener('DOMContentLoaded', timeMe);
 // }());
