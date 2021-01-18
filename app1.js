@@ -62,9 +62,7 @@ tmp.style.backgroundColor = "blue";
     if ( datms3 == 0 ) { 
       i= 0; 
     }		
-    setTimeout(timeMe, 1);
-  }
-
+  
   function fuehrendeNull(zahl) {
     zahl = (zahl < 10 ? '0' : '') + zahl;
     return zahl;
