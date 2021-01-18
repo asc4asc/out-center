@@ -79,6 +79,7 @@ tmp.style.backgroundColor = "blue";
 document.body.addEventListener("click", event => {
   if ( sw1 > 0 ) {
     dat=new Date();	  
+    dat.setTime( 1000*60*60 );  
     datms1=dat.getTime()-StartTime;
     timeMe();
   }
