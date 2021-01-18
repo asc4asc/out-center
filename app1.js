@@ -46,18 +46,27 @@ function timeMe(datms1) {
 } 
 
 document.body.addEventListener("click", event => {
-  if (i == 1) {
-    tmp.style.backgroundColor = "green"; 
-    i=0;
-    datms1 = 1000*60*4 ; 
-    timeMe(datms1);
-    // window.navigator.vibrate(1000);
-  } else {
-    tmp.style.backgroundColor = "yellow";
-    i=1; 
-    datms1 = 1000*60*2 ;  
-    timeMe(datms1); 
-  }
+   switch (i) {
+    case 9:
+      s = 'Hello Butt1 '+expr+'<br>'+s; 
+      break;
+    case 2:
+      s = 'Hello Butt2 '+expr+'<br>'+s; 
+      break;
+    default:
+      s = 'Hello Default '+expr+'<br>'+s; 
+      if (i == 1) {
+        tmp.style.backgroundColor = "green"; 
+        i=0;
+        datms1 = 1000*60*4 ; 
+        timeMe(datms1);
+        // window.navigator.vibrate(1000);
+      } else {
+        tmp.style.backgroundColor = "yellow";
+        i=1; 
+        datms1 = 1000*60*2 ;  
+        timeMe(datms1); 
+      }
 });
 
 var elem = document.documentElement;
