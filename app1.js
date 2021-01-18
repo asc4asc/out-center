@@ -58,7 +58,7 @@ document.body.addEventListener("click", event => {
   if (i == 1) {
     tmp.style.backgroundColor = "green"; 
     i=0;
-    datms1 = 100*60*40 ; 
+    datms1 = 1000*60*4 ; 
     timeMe(datms1);
     // window.navigator.vibrate(1000);
   } else {
