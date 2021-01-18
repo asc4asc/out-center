@@ -38,10 +38,7 @@ tmp.style.backgroundColor = "blue";
       ms = fuehrendeNullen(ms);
       // tpm1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
       tmp1.innerHTML = m + ':' + s + ':' + ms; // display only what is needed.
-    } 
-    if ( datms3 == 0 ) { 
-      i= 0; 
-    }		
+    } 		
   
   function fuehrendeNull(zahl) {
     zahl = (zahl < 10 ? '0' : '') + zahl;
@@ -52,7 +49,7 @@ tmp.style.backgroundColor = "blue";
     zahl = (zahl < 100 ? '0' : '') + zahl;
     return zahl;
   }
-  }	  
+	  
 	
 //  document.addEventListener('DOMContentLoaded', timeMe);
 // }());
