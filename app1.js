@@ -78,5 +78,6 @@ document.body.addEventListener("click", event => {
 });
 
 var elem = document.documentElement;
+dat = new Date();
 dat.setTime( 1000*60*60 );  
 timeMe();
