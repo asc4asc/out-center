@@ -71,5 +71,5 @@ document.body.addEventListener("click", event => {
 
 var elem = document.documentElement;
 dat = new Date();
-datms1 = 100*60;  
+datms1 = 1000*60;  
 timeMe(datms1);
