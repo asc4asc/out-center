@@ -21,24 +21,22 @@ let datms3 = 0;
 
 tmp.style.backgroundColor = "blue";
 
-  function timeMe() {
-      dat = datems1;  // if dat=0 do not set it!
-       dat.setTime( datms1 - datms2 );   
-      	  var h = dat.getHours(); 
-	  var m = dat.getMinutes();
-	  var s = dat.getSeconds();
-	  var ms = dat.getMilliseconds(); 
+function timeMe() {
+  dat = datms1;     
+  var h = dat.getHours(); 
+  var m = dat.getMinutes();
+  var s = dat.getSeconds();
+  var ms = dat.getMilliseconds(); 
       
-      if ( m < 1 && s < WarnTime ) { 
-	tmp.style.backgroundColor = "red"; 
-      }
-      // put data out!  
-      // m = fuehrendeNull(m);
-      s = fuehrendeNull(s);
-      ms = fuehrendeNullen(ms);
-      // tpm1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
-      tmp1.innerHTML = m + ':' + s + ':' + ms; // display only what is needed.
-    } 		
+  if ( m < 1 && s < WarnTime ) { 
+    tmp.style.backgroundColor = "red"; 
+  }
+  // put data out!  
+  // m = fuehrendeNull(m);
+  s = fuehrendeNull(s);
+  ms = fuehrendeNullen(ms);
+  // tpm1.innerHTML = h + ':' + m + ':' + s + ':' + ms;
+  tmp1.innerHTML = m + ':' + s + ':' + ms; // display only what is needed.		
   
   function fuehrendeNull(zahl) {
     zahl = (zahl < 10 ? '0' : '') + zahl;
@@ -49,6 +47,7 @@ tmp.style.backgroundColor = "blue";
     zahl = (zahl < 100 ? '0' : '') + zahl;
     return zahl;
   }
+} 
 	  
 	
 //  document.addEventListener('DOMContentLoaded', timeMe);
