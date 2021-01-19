@@ -1,6 +1,6 @@
 body {
   /* Computer Font not like a book for the APP */
-  font-family: "Lucida Console" /* "Courier New" ; Monospace ; */
+  font-family: "Lucida Console" , "Courier New" . "Monospace" ; 
 }
 
 /* Make content area fill the entire browser window */
